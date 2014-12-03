@@ -1,9 +1,9 @@
-:a
+
 source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails', '4.2.0.rc1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,7 +26,13 @@ group :development, :test do
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring', '1.1.3'
 
+
 gem 'byebug', '3.4.0'
 gem 'web-console', '2.0.0.beta3'
 gem 'sqlite3', '1.3.9'
 end 
+
+group :production do 
+gem 'pg', '0.17.1'
+gem 'rails_12factor', '0.0.2'
+end
