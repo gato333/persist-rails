@@ -6,4 +6,7 @@ class ApplicationController < ActionController::Base
   def hello
       render text: "¡Esta puta Mundo es para los perros!"
   end
+  def goodbye
+      render text: "fuck all of you, everyone!"
+  end
 end
