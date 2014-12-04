@@ -16,9 +16,8 @@ ActiveRecord::Schema.define(version: 20141203211914) do
   create_table "posts", force: true do |t|
     t.string   "username"
     t.string   "userpost"
-    t.datetime "time"
     t.string   "avatar"
-    t.datetime "created_at", null: false
+    t.datetime "created_at",
     t.datetime "updated_at", null: false
   end
 

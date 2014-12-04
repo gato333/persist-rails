@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :username
       t.string :userpost
-      t.datetime :time
+      t.timestamp :created_at
       t.string :avatar
 
       t.timestamps null: false
