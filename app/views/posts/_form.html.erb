@@ -1,16 +1,18 @@
-<%= form_for(@post) do |f| %>
-  <% if @post.errors.any? %>
+  <div id="formmargin">
+<%= form_for(@newpost) do |f| %>
+  <% if @newpost.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@newpost.errors.count, "error") %> prohibited this post from being saved:</h2>
 
       <ul>
-      <% @post.errors.full_messages.each do |message| %>
+      <% @newpost.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
+  
   <div class="field">
     <%= f.label :username %><br>
     <%= f.text_field :username %>
@@ -27,3 +29,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+  </div>
