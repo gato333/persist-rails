@@ -14,17 +14,18 @@
 
   
   <div class="field">
-    <%= f.label :username %><br>
-    <%= f.text_field :username %>
+    Name : <br>
+    <%= f.text_field :username, id: 'nameget', onfocus:"if (this.value=='...person your impersonating here......') this.value='';"%>
   </div>
   <div class="field">
-    <%= f.label :userpost %><br>
-    <%= f.text_field :userpost %>
+    <%= f.label :avatar %> :<br>
+    <%= f.text_field :avatar, id: 'imageget', onfocus: "if (this.value=='....copy url address of image here.....') this.value='';" %>
   </div>
   <div class="field">
-    <%= f.label :avatar %><br>
-    <%= f.text_field :avatar %>
+    Post :<br>
+    <%= f.text_area :userpost, id: 'textget', onfocus: "if (this.value=='...Write your post here...') this.value='';" %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

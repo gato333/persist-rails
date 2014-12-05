@@ -16,11 +16,11 @@
           </div>
             <% end %>
             <div class="post" id="newpost">
-          <form method="post" action="/form">
-            Name :<div id ="nameget">  <%= f.text_field :username %></div><br>
-            Avatar :<div id="imageget"> <%= f.text_field :avatar %> </div><br>
-            <div id="textget" > <%= f.text_field :userpost %> </div>
-            <div id="submit"><%= f.submit %></div>
+            <form method="post" action="/form">
+            Name :  <%= f.text_field :username, id: 'nameget', value: '...person your impersonating here......', onfocus:"if (this.value=='...person your impersonating here......') this.value='';" %><br>
+            Avatar :  <%= f.text_field :avatar, id: 'imageget', value: '....copy url address of image here.....', onfocus: "if (this.value=='....copy url address of image here.....') this.value='';"%> <br>
+            <%= f.text_area :userpost, id: 'textget', value: '...Write your post here...', onfocus: "if (this.value=='...Write your post here...') this.value='';" %> 
+            <%= f.submit id: 'submit' %>
           </form>
         </div> <!--end of newpost /post -->
 
