@@ -90,8 +90,8 @@ body {
     font-size: .7em;
     line-height: .1;
     background-color: #DDDDDD;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #postbutton a {
