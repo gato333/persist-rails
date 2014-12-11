@@ -13,11 +13,6 @@ Rails.application.routes.draw do
 
   get '/contact' => 'static_pages#contact'
   
-  get 'posts/new' => 'post#new'
-
-  get '/posts/:id//edit' => 'post#edit'
-
-  get '/posts/:id/show' => 'post#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
