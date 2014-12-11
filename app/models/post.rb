@@ -6,4 +6,5 @@ class Post < ActiveRecord::Base
 	def settime
 		time= DateTime.now
 	end
+
 end

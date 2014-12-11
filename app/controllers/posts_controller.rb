@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.order(:created_at).last(15).reverse!
-
+    
   end
 
   # GET /posts/1
