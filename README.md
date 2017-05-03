@@ -1,7 +1,6 @@
-# Gabriela's Presistance with Ruby on Rails Website
-
-website: https://floating-stream-9186.herokuapp.com/posts
-github: https://github.com/gato333/persist-rails
+Gabriela's Presistance with Ruby on Rails Website
+==================================================================
+website: https://famous-watergate.herokuapp.com/
 
 this website is exactly like my persistance project which, 
 
@@ -10,3 +9,11 @@ created a small web app that is a small message board, like web app. That will t
 Upgrades are that you can edit, delete and view every post seperatly on their own page, regardless of who you are and who created the post (good and bad, really just an exersice to see if i could do it)
 
 only thing not currently working is the pagination that i had figured out on the previous assignment, but i'm working on it
+
+# To run locally: 
+
+download repo
+
+in Terminal: bundle install
+
+in Terminal: rails server
